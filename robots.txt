@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.darfashions.in/sitemap.xml
+
+# Optional crawl directives
+Disallow: /private/
+Disallow: /tmp/
