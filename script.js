@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const baseUrl = 'https://wa.me/918095911063?text=';
       const message = href.includes('text=')
         ? href.split('text=')[1]
-        : encodeURIComponent('Hi DAR Fashions, I would like to enquire about your collection.');
+        : encodeURIComponent('Hi DAR Fashion, I would like to enquire about your collection.');
 
       if (href.startsWith('https://wa.me/') || href.startsWith('http://wa.me/')) {
         link.href = `${baseUrl}${message}`;
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = (formData.get('message') || '').toString().trim();
 
     const whatsappMessage = encodeURIComponent(
-      `Hi DAR Fashions, I am ${name || 'a customer'} and my mobile number is ${mobile || 'not shared'}. I am interested in ${interest || 'your collection'} and my message is: ${message || 'Please contact me.'}`
+      `Hi DAR Fashion, I am ${name || 'a customer'} and my mobile number is ${mobile || 'not shared'}. I am interested in ${interest || 'your collection'} and my message is: ${message || 'Please contact me.'}`
     );
 
     window.open(`https://wa.me/918095911063?text=${whatsappMessage}`, '_blank', 'noopener,noreferrer');
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = card.querySelector('.whatsapp-product-btn');
     if (!button || !productName) return;
 
-    const rawMessage = `Hi DAR Fashions, I would like to buy the ${productName}.`;
+    const rawMessage = `Hi DAR Fashion, I would like to buy the ${productName}.`;
     button.href = `https://wa.me/918095911063?text=${encodeURIComponent(rawMessage)}`;
   });
 });
