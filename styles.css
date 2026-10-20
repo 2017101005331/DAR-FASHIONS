@@ -96,7 +96,7 @@ textarea {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 3000;
   backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid rgba(107, 31, 46, 0.08);
